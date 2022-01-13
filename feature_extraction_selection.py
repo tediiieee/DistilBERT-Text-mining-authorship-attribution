@@ -93,11 +93,13 @@ def main():
     # Plot
     plt.style.use('ggplot')
 
-    COLORS = ['tab:blue', 'tab:orange', 'tab:green', 'tab:red', 'tab:purple',
-              'tab:brown', 'tab:pink', 'tab:gray', 'tab:olive', 'tab:cyan']
+    COLORS = ['tab:blue','tab:orange','tab:green','tab:red','tab:purple',
+              'tab:brown']
     
+    LINE_STYLES = ['solid','solid','dashed','dashed','dashdot','dashdot']
+
     for i, m_acc in enumerate(res):
-        plt.plot(ds_sizes,m_acc,label=m_names[i], color = COLORS[i])
+        plt.plot(ds_sizes,m_acc,label=m_names[i], color = COLORS[i], linestyle = LINE_STYLES[i])
 
     plt.legend()
     plt.title("Feature extraction comparison")
