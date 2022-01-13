@@ -18,3 +18,5 @@ bert - Run gridsearch cv on all ml models (BERT variants)
 (Code inspired by: https://github.com/jalammar/jalammar.github.io/blob/master/notebooks/bert/A_Visual_Notebook_to_Using_BERT_for_the_First_Time.ipynb)
 
 ml -  Contains useful functions relating to the machine learning.
+
+Project done for the TDDE16 - Text mining course at Linköpings university.
