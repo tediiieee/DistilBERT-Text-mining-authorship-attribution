@@ -23,12 +23,14 @@ def main():
     tweets_o_rt = even_dist(tweets_rt, "oversample")[0]
 
     #Print shape for each dataset
-    print("nr samples in 'original' dataset: ", tweets_rt.shape)
     print("nr samples in 'no retweets' dataset: ", tweets.shape)
-    print("nr samples in 'undersample' dataset: ", tweets_u_rt.shape)
-    print("nr samples in 'no retweets, undersample' dataset: ", tweets_u.shape)
-    print("nr samples in 'oversample' dataset: ", tweets_o_rt.shape)
+    print("nr samples in 'original' dataset: ", tweets_rt.shape)
     print("nr samples in 'no retweets, oversample' dataset: ", tweets_o.shape)
+    print("nr samples in 'oversample' dataset: ", tweets_o_rt.shape)
+    print("nr samples in 'no retweets, undersample' dataset: ", tweets_u.shape)
+    print("nr samples in 'undersample' dataset: ", tweets_u_rt.shape)
+
+
 
     #Plot the class distributions
     #With retweets
